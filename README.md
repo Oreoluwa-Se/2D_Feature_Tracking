@@ -38,4 +38,13 @@ The following tests were conducted based in the image set given:
 
 All metrics displayed were averaged over 10 images.
 
+#### Metric 1: Keypoint Selector and Matching Scheme
+Identifies the optimal matcher and key point selection scheme. 
+	* kNN - k-Nearest Neighbours
+	* NN - Nearest Neighbours
+	* FLANN - Fast Library for Approximate Nearest Neighbors 
+<p align="center">
+<img src="./results/222.png" alt="descriptor-matcher" style="zoom: 200%;"/>
+</p>
 
+Based on the image above, the Brute Force matching scheme combined with the k-nearest neighbor selector is most favorable as it takes the least execution time. Because we are dealing with a relatively small window size (vehicle ahead), this method is accepted. For larger window sizes, the brute force approach would not be favorable. 
