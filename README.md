@@ -30,3 +30,12 @@ The idea of the camera course is to build a collision detection system - that's 
 3. Compile: `cmake .. && make`
 4. Run it: `./2D_feature_tracking`.
 
+## Results
+The following tests were conducted based in the image set given:
+* Finding optimal matching scheme pairing.
+* Finding optimal detector-descriptor pairing.
+* Identifying overall method which will be used in the 3D_Feature_Tracking project.
+
+All metrics displayed were averaged over 10 images.
+
+
