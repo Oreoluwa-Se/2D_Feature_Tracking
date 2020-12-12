@@ -70,10 +70,13 @@ The following table shows averaged values over 10 images.
 | ORB       |  500       |      105         |
 | AKAZE     | 1342       |      165         |
 
-Additional information for each descriptor, including execution times, can be found in the excel sheet stored in the results folder. Using the total number of key points, key points in the region of interest, and execution time, a scaled ranking system was created and displayed below.
+Additional information for each descriptor, including execution times, can be found in the excel sheet stored in the results folder. Using the total number of key points, key points in the region of interest, and execution time, a scaled ranking system was created and displayed below. The major factor was the execution time as the application needs to operate realtime.
 <p align="center">
 <img src="./results/333.png" alt="descriptor" style="zoom: 200%;"/>
 </p>
 
 From the chart. The selected keypoint is the FAST detector.
+
+#### Final Thoughts
+Based on results, for this application a FAST detector type with BRISK descriptor and Brute Force | k-Nearest Neighbours selector scheme is the ideal solution. 
 
