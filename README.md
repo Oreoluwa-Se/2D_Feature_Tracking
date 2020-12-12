@@ -50,10 +50,12 @@ Identifies the optimal matcher and key point selection scheme.
 Based on the image above, the Brute Force matching scheme combined with the k-nearest neighbor selector is most favorable as it takes the least execution time. Because we are dealing with a relatively small window size (vehicle ahead), this method is accepted. For larger window sizes, the brute force approach would not be favorable. 
 
 #### Metric 2: Optimal Descriptor
-Compates the average execution time between all descriptor types. They include:
+Compares the average execution time between all descriptor types. They include:
 	* BRISK, BRIEF, ORB, FREAK, AKAZE, SIFT
 <p align="center">
 <img src="./results/111.png" alt="descriptor" style="zoom: 200%;"/>
 </p>
 
-From the image above, BRIEF, ORB, and BRISK take the lowest execution time. The issue with the brief descriptor is that it is less adaptable to changes in-plane rotation. An example of where this will be an issue will be the instantaneous moment where the vehicle changes orientation from a linear motion to a curve type motion. Problems will occur at this point. Therefore, the BRISK method is selected as it doesn't suffer from this issue.
+From the image above, BRIEF, ORB, and BRISK take the lowest execution time. The issue with the brief descriptor is that it is less adaptable to changes in plane rotation. An example of where this will be an issue will be the instantaneous moment where the vehicle changes orientation from a linear motion to a curve type motion. Problems will occur at this point. Therefore, the *BRISK* method is selected as it doesn't suffer from this issue.
+
+#### Metric 3: Optimal Detector
