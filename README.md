@@ -59,3 +59,21 @@ Compares the average execution time between all descriptor types. They include:
 From the image above, BRIEF, ORB, and BRISK take the lowest execution time. The issue with the brief descriptor is that it is less adaptable to changes in plane rotation. An example of where this will be an issue will be the instantaneous moment where the vehicle changes orientation from a linear motion to a curve type motion. Problems will occur at this point. Therefore, the BRISK method is selected as it doesn't suffer from this issue.
 
 #### Metric 3: Optimal Detector
+The following table shows averaged values over 10 images.
+
+| Detector  |  keypoints | keypoints in ROI |  
+|-----------|------------|------------------|
+| SHITOMASI | 1339       |      118         |
+| HARRIS    |  180       |       21         |
+| FAST      | 1783       |      149         |
+| BRISK     | 2603       |      278         |
+| ORB       |  500       |      105         |
+| AKAZE     | 1342       |      165         |
+
+Additional information for each descriptor, including execution times, can be found in the excel sheet stored in the results folder. Using the total number of key points, key points in the region of interest, and execution time, a scaled ranking system was created and displayed below.
+<p align="center">
+<img src="./results/333.png" alt="descriptor" style="zoom: 200%;"/>
+</p>
+
+From the chart. The selected keypoint is the FAST detector.
+
