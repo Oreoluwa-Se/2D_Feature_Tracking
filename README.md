@@ -47,7 +47,7 @@ Identifies the optimal matcher and key point selection scheme.
 <img src="./results/222.png" alt="descriptor-matcher" style="zoom: 200%;"/>
 </p>
 
-Based on the image above, the Brute Force matching scheme combined with the k-nearest neighbor selector is most favorable as it takes the least execution time. Because we are dealing with a relatively small window size (vehicle ahead), this method is accepted. For larger window sizes, the brute force approach would not be favorable. 
+Based on the image above, the Brute Force matching scheme combined with the k-nearest neighbor selector is most favorable as it takes the least execution time. Because we are dealing with a relatively small window size (vehicle ahead), this method is accepted. For larger window sizes or larger number of keypoints, the brute force approach would not be favorable. 
 
 #### Metric 2: Optimal Descriptor
 Compares the average execution time between all descriptor types. They include:
